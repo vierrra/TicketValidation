@@ -13,6 +13,7 @@
 		88569C612685195E000AD9B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88569C5F2685195E000AD9B5 /* Main.storyboard */; };
 		88569C632685195F000AD9B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88569C622685195F000AD9B5 /* Assets.xcassets */; };
 		88569C662685195F000AD9B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88569C642685195F000AD9B5 /* LaunchScreen.storyboard */; };
+		8868F4BB26951302005FE384 /* ValidateFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8868F4BA26951302005FE384 /* ValidateFormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		88569C622685195F000AD9B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88569C652685195F000AD9B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88569C672685195F000AD9B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8868F4BA26951302005FE384 /* ValidateFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateFormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		88569C582685195E000AD9B5 /* TicketsValidation */ = {
 			isa = PBXGroup;
 			children = (
+				8868F4B9269512D2005FE384 /* Controller */,
+				8868F4B8269512C9005FE384 /* Model */,
 				88569C592685195E000AD9B5 /* AppDelegate.swift */,
 				88569C5B2685195E000AD9B5 /* SceneDelegate.swift */,
-				88569C5D2685195E000AD9B5 /* ViewController.swift */,
 				88569C5F2685195E000AD9B5 /* Main.storyboard */,
 				88569C622685195F000AD9B5 /* Assets.xcassets */,
 				88569C642685195F000AD9B5 /* LaunchScreen.storyboard */,
 				88569C672685195F000AD9B5 /* Info.plist */,
 			);
 			path = TicketsValidation;
+			sourceTree = "<group>";
+		};
+		8868F4B8269512C9005FE384 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8868F4BA26951302005FE384 /* ValidateFormViewController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8868F4B9269512D2005FE384 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				88569C5D2685195E000AD9B5 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8868F4BB26951302005FE384 /* ValidateFormViewController.swift in Sources */,
 				88569C5E2685195E000AD9B5 /* ViewController.swift in Sources */,
 				88569C5A2685195E000AD9B5 /* AppDelegate.swift in Sources */,
 				88569C5C2685195E000AD9B5 /* SceneDelegate.swift in Sources */,
