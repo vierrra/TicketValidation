@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CPF_CNPJ_Validator
 
 class ViewController: UIViewController {
 
@@ -16,6 +17,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         self.configureBannerImageView()
+        
+        let cpf = "03004499410"
+        
+        if BooleanValidator().validate(cpf: cpf) {
+            print("cpf válido")
+        } else {
+            print("cpf inválido")
+        }
     }
 
     @IBAction func buyButton(_ sender: Any) {
