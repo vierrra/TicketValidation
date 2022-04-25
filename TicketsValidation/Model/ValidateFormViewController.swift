@@ -34,6 +34,7 @@ class ValidateFormViewController: UIViewController {
     }
     
     func validateTextFields(_ textFields: [UITextField]) -> Bool {
+        let cpfValidate = BooleanValidator()
         var dictionaryTextField: Dictionary<TextFieldType, UITextField> = [:]
         
         for textField in textFields {
@@ -42,17 +43,13 @@ class ValidateFormViewController: UIViewController {
             }
         }
         
-        guard let cpf = dictionaryTextField[.cpf] else { return false }
-        guard let email = dictionaryTextField[.email] else { return false }
-        let cpfValidate = BooleanValidator()
-        
-        cpfValidate.validate(cpf: cpf.text!)
-        checkEmail(email: email.text!)
+        guard let cpf = dictionaryTextField[.cpf], cpfValidate.validate(cpf: cpf.text!) else { return false }
+        guard let email = dictionaryTextField[.email], self.checkEmail(email.text!) else { return false }
         
         return true
     }
     
-    func checkEmail(email: String) -> Bool {
+    func checkEmail(_ email: String) -> Bool {
         let emailRegEx = "(?:[a-z0-9!#$%\\&'*+/=?\\^_`{|}~-]+(?:\\.[a-z0-9!#$%\\&'*+/=?\\^_`{|}"+"~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\"+"x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-"+"z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5"+"]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-"+"9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21"+"-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])"
 
         let emailTest = NSPredicate(format:"SELF MATCHES[c] %@", emailRegEx)
