@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C7F34FD34A7AE2997267292 /* Pods_TicketsValidation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1CE77B14B84585F444D3ED /* Pods_TicketsValidation.framework */; };
+		3563A71E0BE4C6EB68CC8F72 /* Pods_TicketsValidation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5660C21FAE3CD64ACABD625F /* Pods_TicketsValidation.framework */; };
 		88569C5A2685195E000AD9B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569C592685195E000AD9B5 /* AppDelegate.swift */; };
 		88569C5C2685195E000AD9B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569C5B2685195E000AD9B5 /* SceneDelegate.swift */; };
 		88569C5E2685195E000AD9B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569C5D2685195E000AD9B5 /* ViewController.swift */; };
@@ -15,11 +15,13 @@
 		88569C632685195F000AD9B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88569C622685195F000AD9B5 /* Assets.xcassets */; };
 		88569C662685195F000AD9B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88569C642685195F000AD9B5 /* LaunchScreen.storyboard */; };
 		8868F4BB26951302005FE384 /* ValidateFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8868F4BA26951302005FE384 /* ValidateFormViewController.swift */; };
+		88846E4428174C02005906E1 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88846E4328174C02005906E1 /* Location.swift */; };
+		88846E4628174D51005906E1 /* LocationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88846E4528174D51005906E1 /* LocationAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		417CBABB22F23415F6C26C9F /* Pods-TicketsValidation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketsValidation.release.xcconfig"; path = "Target Support Files/Pods-TicketsValidation/Pods-TicketsValidation.release.xcconfig"; sourceTree = "<group>"; };
-		4C1CE77B14B84585F444D3ED /* Pods_TicketsValidation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicketsValidation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41633BCC8D0EFF96C90D890D /* Pods-TicketsValidation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketsValidation.debug.xcconfig"; path = "Target Support Files/Pods-TicketsValidation/Pods-TicketsValidation.debug.xcconfig"; sourceTree = "<group>"; };
+		5660C21FAE3CD64ACABD625F /* Pods_TicketsValidation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicketsValidation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88569C562685195E000AD9B5 /* TicketsValidation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketsValidation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88569C592685195E000AD9B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88569C5B2685195E000AD9B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +31,9 @@
 		88569C652685195F000AD9B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88569C672685195F000AD9B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8868F4BA26951302005FE384 /* ValidateFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateFormViewController.swift; sourceTree = "<group>"; };
-		D6A53563B7D160912FFAA745 /* Pods-TicketsValidation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketsValidation.debug.xcconfig"; path = "Target Support Files/Pods-TicketsValidation/Pods-TicketsValidation.debug.xcconfig"; sourceTree = "<group>"; };
+		88846E4328174C02005906E1 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		88846E4528174D51005906E1 /* LocationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAPI.swift; sourceTree = "<group>"; };
+		9362404FDC87F7D2F4BCB288 /* Pods-TicketsValidation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketsValidation.release.xcconfig"; path = "Target Support Files/Pods-TicketsValidation/Pods-TicketsValidation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C7F34FD34A7AE2997267292 /* Pods_TicketsValidation.framework in Frameworks */,
+				3563A71E0BE4C6EB68CC8F72 /* Pods_TicketsValidation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5D702C3C91D3E36345AE2ABF /* Frameworks */ = {
+		055470606289489D1D8FCC00 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4C1CE77B14B84585F444D3ED /* Pods_TicketsValidation.framework */,
+				5660C21FAE3CD64ACABD625F /* Pods_TicketsValidation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -57,8 +61,8 @@
 			children = (
 				88569C582685195E000AD9B5 /* TicketsValidation */,
 				88569C572685195E000AD9B5 /* Products */,
-				E2CACA26F8CD78B10D06FA79 /* Pods */,
-				5D702C3C91D3E36345AE2ABF /* Frameworks */,
+				D0EC557589353F440E22A003 /* Pods */,
+				055470606289489D1D8FCC00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				8868F4BA26951302005FE384 /* ValidateFormViewController.swift */,
+				88846E4328174C02005906E1 /* Location.swift */,
+				88846E4528174D51005906E1 /* LocationAPI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,13 +107,12 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		E2CACA26F8CD78B10D06FA79 /* Pods */ = {
+		D0EC557589353F440E22A003 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D6A53563B7D160912FFAA745 /* Pods-TicketsValidation.debug.xcconfig */,
-				417CBABB22F23415F6C26C9F /* Pods-TicketsValidation.release.xcconfig */,
+				41633BCC8D0EFF96C90D890D /* Pods-TicketsValidation.debug.xcconfig */,
+				9362404FDC87F7D2F4BCB288 /* Pods-TicketsValidation.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -118,11 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88569C6A2685195F000AD9B5 /* Build configuration list for PBXNativeTarget "TicketsValidation" */;
 			buildPhases = (
-				7B60470C507AA9DA1BA2E4CE /* [CP] Check Pods Manifest.lock */,
+				2834C7DED0E43E2463053C18 /* [CP] Check Pods Manifest.lock */,
 				88569C522685195E000AD9B5 /* Sources */,
 				88569C532685195E000AD9B5 /* Frameworks */,
 				88569C542685195E000AD9B5 /* Resources */,
-				7436B3C1F02966C9A252E9A9 /* [CP] Embed Pods Frameworks */,
+				6D47C17A9A178546BD08873B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,24 +184,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7436B3C1F02966C9A252E9A9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TicketsValidation/Pods-TicketsValidation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TicketsValidation/Pods-TicketsValidation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TicketsValidation/Pods-TicketsValidation-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7B60470C507AA9DA1BA2E4CE /* [CP] Check Pods Manifest.lock */ = {
+		2834C7DED0E43E2463053C18 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -218,6 +206,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6D47C17A9A178546BD08873B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TicketsValidation/Pods-TicketsValidation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TicketsValidation/Pods-TicketsValidation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TicketsValidation/Pods-TicketsValidation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -226,7 +231,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8868F4BB26951302005FE384 /* ValidateFormViewController.swift in Sources */,
+				88846E4628174D51005906E1 /* LocationAPI.swift in Sources */,
 				88569C5E2685195E000AD9B5 /* ViewController.swift in Sources */,
+				88846E4428174C02005906E1 /* Location.swift in Sources */,
 				88569C5A2685195E000AD9B5 /* AppDelegate.swift in Sources */,
 				88569C5C2685195E000AD9B5 /* SceneDelegate.swift in Sources */,
 			);
@@ -372,7 +379,7 @@
 		};
 		88569C6B2685195F000AD9B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6A53563B7D160912FFAA745 /* Pods-TicketsValidation.debug.xcconfig */;
+			baseConfigurationReference = 41633BCC8D0EFF96C90D890D /* Pods-TicketsValidation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -392,7 +399,7 @@
 		};
 		88569C6C2685195F000AD9B5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 417CBABB22F23415F6C26C9F /* Pods-TicketsValidation.release.xcconfig */;
+			baseConfigurationReference = 9362404FDC87F7D2F4BCB288 /* Pods-TicketsValidation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

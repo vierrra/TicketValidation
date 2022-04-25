@@ -17,7 +17,13 @@ class ViewController: UIViewController {
         
         self.configureBannerImageView()
     }
-
+    
+    // MARK: - Actions
+   
+    @IBAction func changedValueCepTextField(_ sender: UITextField) {
+        requestCep()
+    }
+    
     @IBAction func buyButton(_ sender: Any) {
         checkTextFieldsFilledAndValidated()
     }

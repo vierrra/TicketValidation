@@ -8,5 +8,6 @@ target 'TicketsValidation' do
   # Pods for TicketsValidation
 
   pod 'CPF-CNPJ-Validator'
+  pod 'Alamofire'
 
 end
