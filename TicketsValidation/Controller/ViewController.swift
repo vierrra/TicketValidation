@@ -6,8 +6,7 @@
 //
 
 import UIKit
-import CPF_CNPJ_Validator
-
+ 
 class ViewController: UIViewController {
 
     @IBOutlet weak var bannerImageView: UIImageView!
@@ -17,20 +16,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         self.configureBannerImageView()
-        
-        let cpf = "03004499410"
-        
-        if BooleanValidator().validate(cpf: cpf) {
-            print("cpf válido")
-        } else {
-            print("cpf inválido")
-        }
     }
 
     @IBAction func buyButton(_ sender: Any) {
+        checkTextFieldsFilledAndValidated()
+    }
+    
+    func checkTextFieldsFilledAndValidated() {
         let textFieldsFilled = ValidateFormViewController().checkIfTextFieldsIsEmpty(textFields)
+        let textFieldsValidated = ValidateFormViewController().validateTextFields(textFields)
        
-        if textFieldsFilled {
+        if textFieldsFilled && textFieldsValidated {
             let alert = ValidateFormViewController().showTextFieldsAlertFilled("Parabéns", "Compra realizada com sucesso")
             
             present(alert, animated: true, completion: nil)
