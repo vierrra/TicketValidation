@@ -7,6 +7,7 @@
 
 import UIKit
 import CPF_CNPJ_Validator
+import CreditCardValidator
 
 enum TextFieldType: Int {
     case name = 1
@@ -45,6 +46,7 @@ class ValidateFormViewController: UIViewController {
         
         guard let cpf = dictionaryTextField[.cpf], cpfValidate.validate(cpf: cpf.text!) else { return false }
         guard let email = dictionaryTextField[.email], self.checkEmail(email.text!) else { return false }
+        guard let cardNumber = dictionaryTextField[.cardNumber], CreditCardValidator(<#String#>).isValid(for: CreditCardType(rawValue: cardNumber.text!) ?? <#default value#>) else { return false }
         
         return true
     }

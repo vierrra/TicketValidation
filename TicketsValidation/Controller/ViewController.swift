@@ -18,10 +18,32 @@ class ViewController: UIViewController {
         self.configureBannerImageView()
     }
     
+    func fetchTextField(textFieldType: TextFieldType, completion:(_ requestTextField: UITextField) -> Void) {
+        for textField in textFields {
+            if let textFieldCurrent = TextFieldType(rawValue: textField.tag) {
+                if textFieldCurrent == textFieldType {
+                    completion(textField)
+                }
+            }
+        }
+    }
+    
     // MARK: - Actions
    
     @IBAction func changedValueCepTextField(_ sender: UITextField) {
-        requestCep()
+        let queryCep = LocationAPI()
+        guard let cep = sender.text else { return }
+        
+        queryCep.requestCep(cep: cep) { locationData in
+            self.fetchTextField(textFieldType: .address) { requestTextField in
+                requestTextField.text = locationData.address
+            }
+            self.fetchTextField(textFieldType: .district) { requestTextField in
+                requestTextField.text = locationData.district
+            }
+        } failure: { err in
+            print(err)
+        }
     }
     
     @IBAction func buyButton(_ sender: Any) {
